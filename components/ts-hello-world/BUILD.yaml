@@ -1,0 +1,13 @@
+packages:
+  - name: app
+    type: yarn
+    srcs:
+      - "package.json"
+      - "tsconfig.json"
+      - "package-lock.json"
+      - "src/**/*.ts"
+    config:
+      packaging: app
+      dontTest: true
+      yarnlock: "package-lock.json"
+      tsconfig: "tsconfig.json"

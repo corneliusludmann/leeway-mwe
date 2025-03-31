@@ -1,0 +1,9 @@
+packages:
+  - name: all
+    type: generic
+    deps:
+      - components/go-hello-world:app
+      - components/ts-hello-world:app
+    config:
+      commands:
+        - ["echo", "Built both Go and TypeScript projects"]

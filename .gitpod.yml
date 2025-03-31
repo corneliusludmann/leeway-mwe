@@ -1,0 +1,21 @@
+# Gitpod configuration file for Leeway MWE project
+
+tasks:
+  - name: Install Leeway and build projects
+    init: |
+      # Install Leeway from source
+      ./install-leeway.sh
+      source ~/.leeway.env
+      echo 'source ~/.leeway.env' >> ~/.bashrc
+      
+      # Build all projects
+      leeway build
+    command: |
+      echo "Leeway is installed and projects are built."
+      echo "You can rebuild all projects with: leeway build"
+      echo "Or build specific projects with: leeway build components/go-hello-world:app"
+
+vscode:
+  extensions:
+    - golang.go
+    - ms-vscode.vscode-typescript-next

@@ -1,0 +1,8 @@
+# Leeway workspace configuration
+# This is the root configuration file for the Leeway build system
+
+# Default target to build when just running `leeway build`
+defaultTarget: components:all
+
+# Default arguments for build
+defaultArgs: {}
