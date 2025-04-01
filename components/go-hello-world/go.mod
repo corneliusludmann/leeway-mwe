@@ -1,3 +1,3 @@
 module github.com/example/go-hello-world
 
-go 1.20
+go 1.24
