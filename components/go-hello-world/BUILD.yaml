@@ -8,3 +8,14 @@ packages:
     config:
       packaging: app
       dontTest: false
+  
+  - name: docker
+    type: docker
+    deps:
+      - :app
+    srcs:
+      - "Dockerfile"
+    config:
+      dockerfile: Dockerfile
+      image: 
+        - go-hello-world

@@ -6,3 +6,7 @@ defaultTarget: components:all
 
 # Default arguments for build
 defaultArgs: {}
+
+sbom:
+  enabled: true
+  scanCVE: true

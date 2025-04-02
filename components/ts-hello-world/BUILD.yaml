@@ -11,3 +11,14 @@ packages:
       dontTest: true
       yarnlock: "package-lock.json"
       tsconfig: "tsconfig.json"
+  
+  - name: docker
+    type: docker
+    deps:
+      - :app
+    srcs:
+      - "Dockerfile"
+    config:
+      dockerfile: Dockerfile
+      image: 
+        - ts-hello-world

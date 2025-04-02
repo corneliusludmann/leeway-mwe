@@ -4,6 +4,8 @@ packages:
     deps:
       - components/go-hello-world:app
       - components/ts-hello-world:app
+      - components/go-hello-world:docker
+      - components/ts-hello-world:docker
     config:
       commands:
-        - ["echo", "Built both Go and TypeScript projects"]
+        - ["echo", "Built both Go and TypeScript projects and their Docker images"]
