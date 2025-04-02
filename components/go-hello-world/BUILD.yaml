@@ -17,5 +17,4 @@ packages:
       - "Dockerfile"
     config:
       dockerfile: Dockerfile
-      image: 
-        - go-hello-world
+      image: []

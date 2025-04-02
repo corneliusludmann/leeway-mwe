@@ -4,12 +4,12 @@ packages:
     srcs:
       - "package.json"
       - "tsconfig.json"
-      - "package-lock.json"
+      - "yarn.lock"
       - "src/**/*.ts"
     config:
       packaging: app
       dontTest: true
-      yarnlock: "package-lock.json"
+      yarnlock: "yarn.lock"
       tsconfig: "tsconfig.json"
   
   - name: docker
@@ -20,5 +20,4 @@ packages:
       - "Dockerfile"
     config:
       dockerfile: Dockerfile
-      image: 
-        - ts-hello-world
+      image: []
