@@ -20,4 +20,5 @@ packages:
       - "Dockerfile"
     config:
       dockerfile: Dockerfile
-      image: []
+      image:
+        - localhost:5000/hello-world-ts
