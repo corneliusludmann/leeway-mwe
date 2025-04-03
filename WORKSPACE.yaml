@@ -9,4 +9,10 @@ defaultArgs: {}
 
 sbom:
   enabled: true
-  scanCVE: true
+  scanVulnerabilities: true
+  failOn:
+    - critical
+    - high
+  # ignoreVulnerabilities:
+  #   - vulnerability: GHSA-3xgq-45jj-v275
+  #     reason: "TESTING REMOVE ME"

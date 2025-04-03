@@ -20,5 +20,8 @@ packages:
       - "Dockerfile"
     config:
       dockerfile: Dockerfile
-      image:
-        - localhost:5000/hello-world-ts
+      image: []
+    sbom:
+      ignoreVulnerabilities:
+        - vulnerability: GHSA-3xgq-45jj-v275
+          reason: "TESTING REMOVE ME"
